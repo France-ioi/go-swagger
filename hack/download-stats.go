@@ -25,7 +25,7 @@ func init() {
 func main() {
 	flag.Parse()
 
-	req, err := http.NewRequest("GET", "https://api.github.com/repos/go-swagger/go-swagger/releases", nil)
+	req, err := http.NewRequest("GET", "https://api.github.com/repos/France-ioi/go-swagger/releases", nil)
 	if err != nil {
 		log.Fatalln(err)
 	}

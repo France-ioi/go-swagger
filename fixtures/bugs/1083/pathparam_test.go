@@ -18,9 +18,9 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/runtime/middleware/untyped"
 	"github.com/go-openapi/swag"
-	"github.com/go-swagger/go-swagger/fixtures/bugs/1083/codegen/client"
-	"github.com/go-swagger/go-swagger/fixtures/bugs/1083/codegen/client/pet_operations"
-	"github.com/go-swagger/go-swagger/fixtures/bugs/1083/codegen/models"
+	"github.com/France-ioi/go-swagger/fixtures/bugs/1083/codegen/client"
+	"github.com/France-ioi/go-swagger/fixtures/bugs/1083/codegen/client/pet_operations"
+	"github.com/France-ioi/go-swagger/fixtures/bugs/1083/codegen/models"
 	"github.com/stretchr/testify/require"
 )
 

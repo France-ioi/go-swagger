@@ -234,7 +234,7 @@ func generateFixtures(_ testing.TB) map[string]generateFixture {
 
 				// assert imports, with deconfliction
 				cwd := testCwd(t)
-				base := path.Join("github.com", "go-swagger", "go-swagger",
+				base := path.Join("github.com", "France-ioi", "go-swagger",
 					filepath.ToSlash(strings.TrimPrefix(target, filepath.Dir(cwd))),
 				)
 
@@ -307,7 +307,7 @@ func generateFixtures(_ testing.TB) map[string]generateFixture {
 				code := string(buf)
 
 				cwd := testCwd(t)
-				base := path.Join("github.com", "go-swagger", "go-swagger",
+				base := path.Join("github.com", "France-ioi", "go-swagger",
 					filepath.ToSlash(strings.TrimPrefix(target, filepath.Dir(cwd))),
 				)
 

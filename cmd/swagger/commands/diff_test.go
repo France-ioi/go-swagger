@@ -7,13 +7,13 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-
 	"testing"
 
-	"github.com/go-swagger/go-swagger/cmd/swagger/commands/diff"
-	"github.com/go-swagger/go-swagger/cmd/swagger/commands/internal/cmdtest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/France-ioi/go-swagger/cmd/swagger/commands/diff"
+	"github.com/France-ioi/go-swagger/cmd/swagger/commands/internal/cmdtest"
 )
 
 func fixturePath(file string, parts ...string) string {

@@ -19,8 +19,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/go-swagger/go-swagger/cmd/swagger/commands"
-	flags "github.com/jessevdk/go-flags"
+	"github.com/jessevdk/go-flags"
+
+	"github.com/France-ioi/go-swagger/cmd/swagger/commands"
 )
 
 var opts struct {

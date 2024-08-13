@@ -1,7 +1,7 @@
 package generate
 
 import (
-	"github.com/go-swagger/go-swagger/generator"
+	"github.com/France-ioi/go-swagger/generator"
 	"github.com/jessevdk/go-flags"
 )
 

@@ -18,7 +18,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/go-swagger/go-swagger/generator"
+	"github.com/France-ioi/go-swagger/generator"
 )
 
 type operationOptions struct {

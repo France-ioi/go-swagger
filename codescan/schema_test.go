@@ -279,7 +279,7 @@ func TestSchemaBuilder(t *testing.T) {
 	require.NotNil(t, decl2)
 	require.NoError(t, (&schemaBuilder{decl: decl2, ctx: sctx}).Build(models))
 	msch, ok := models["order"]
-	pn := "github.com/go-swagger/go-swagger/fixtures/goparsing/classification/models"
+	pn := "github.com/France-ioi/go-swagger/fixtures/goparsing/classification/models"
 	assert.True(t, ok)
 	assert.Equal(t, pn, msch.Extensions["x-go-package"])
 	assert.Equal(t, "StoreOrder", msch.Extensions["x-go-name"])
@@ -293,7 +293,7 @@ func TestSchemaBuilder_AddExtensions(t *testing.T) {
 	require.NoError(t, (&schemaBuilder{decl: decl, ctx: sctx}).Build(models))
 
 	msch, ok := models["order"]
-	pn := "github.com/go-swagger/go-swagger/fixtures/goparsing/classification/models"
+	pn := "github.com/France-ioi/go-swagger/fixtures/goparsing/classification/models"
 	assert.True(t, ok)
 	assert.Equal(t, pn, msch.Extensions["x-go-package"])
 	assert.Equal(t, "StoreOrder", msch.Extensions["x-go-name"])
@@ -834,7 +834,7 @@ func TestEmbeddedAllOf(t *testing.T) {
 }
 
 func TestEmbeddedDescriptionAndTags(t *testing.T) {
-	packagePath := "github.com/go-swagger/go-swagger/fixtures/bugs/3125"
+	packagePath := "github.com/France-ioi/go-swagger/fixtures/bugs/3125"
 	sctx, err := newScanCtx(&Options{Packages: []string{packagePath}})
 	require.NoError(t, err)
 	decl, _ := sctx.FindDecl(packagePath, "Item")
@@ -887,7 +887,7 @@ func TestPointersAreNullableByDefaultWhenSetXNullableForPointersIsSet(t *testing
 		assert.NotContains(t, schema.Properties["Value5"].Extensions, "x-nullable")
 	}
 
-	packagePath := "github.com/go-swagger/go-swagger/fixtures/enhancements/pointers-nullable-by-default"
+	packagePath := "github.com/France-ioi/go-swagger/fixtures/enhancements/pointers-nullable-by-default"
 	sctx, err := newScanCtx(&Options{Packages: []string{packagePath}, SetXNullableForPointers: true})
 	require.NoError(t, err)
 
@@ -922,7 +922,7 @@ func TestPointersAreNotNullableByDefaultWhenSetXNullableForPointersIsNotSet(t *t
 		assert.NotContains(t, schema.Properties["Value5"].Extensions, "x-nullable")
 	}
 
-	packagePath := "github.com/go-swagger/go-swagger/fixtures/enhancements/pointers-nullable-by-default"
+	packagePath := "github.com/France-ioi/go-swagger/fixtures/enhancements/pointers-nullable-by-default"
 	sctx, err := newScanCtx(&Options{Packages: []string{packagePath}})
 	require.NoError(t, err)
 
@@ -1091,7 +1091,7 @@ func TestAddExtension(t *testing.T) {
 }
 
 func getClassificationModel(sctx *scanCtx, nm string) *entityDecl {
-	decl, ok := sctx.FindDecl("github.com/go-swagger/go-swagger/fixtures/goparsing/classification/models", nm)
+	decl, ok := sctx.FindDecl("github.com/France-ioi/go-swagger/fixtures/goparsing/classification/models", nm)
 	if !ok {
 		return nil
 	}

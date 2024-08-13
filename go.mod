@@ -1,4 +1,4 @@
-module github.com/go-swagger/go-swagger
+module github.com/France-ioi/go-swagger
 
 go 1.21
 

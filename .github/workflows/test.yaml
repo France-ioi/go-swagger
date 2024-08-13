@@ -211,7 +211,7 @@ jobs:
         with:
           images: |
             quay.io/goswagger/swagger
-            ghcr.io/go-swagger/go-swagger
+            ghcr.io/France-ioi/go-swagger
           tags: |
             type=ref,event=branch
             type=sha
@@ -349,7 +349,7 @@ jobs:
           # list of Docker images to use as base name for tags
           images: |
             quay.io/goswagger/swagger
-            ghcr.io/go-swagger/go-swagger
+            ghcr.io/France-ioi/go-swagger
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=tag

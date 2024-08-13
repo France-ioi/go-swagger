@@ -9,9 +9,9 @@ import (
 	"github.com/go-openapi/analysis"
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/spec"
-	flags "github.com/jessevdk/go-flags"
+	"github.com/jessevdk/go-flags"
 
-	"github.com/go-swagger/go-swagger/generator"
+	"github.com/France-ioi/go-swagger/generator"
 )
 
 const (
